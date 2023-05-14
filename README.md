@@ -1,5 +1,6 @@
 # Deep Learning Solutions for Partial Differential Equations
 This repository contains Python scripts that implement solutions to several partial differential equations using deep learning. The equations and corresponding scripts are organized into separate folders.
+This work is a part of my MSc thesis and you can find a jupyter version too.
 
 ## Equations
 The following equations are implemented in this repository:
