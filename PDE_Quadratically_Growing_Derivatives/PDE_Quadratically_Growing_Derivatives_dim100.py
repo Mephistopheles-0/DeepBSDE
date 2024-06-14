@@ -1,7 +1,4 @@
-"""
-The main file to run BSDE solver to solve parabolic partial differential equations (PDEs).
 
-"""
 
 import json
 import munch
