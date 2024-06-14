@@ -27,7 +27,7 @@ class Equation(object):
 
 
 class HJBLQ(Equation):
-    """HJB equation in PNAS paper doi.org/10.1073/pnas.1718942115"""
+    
     def __init__(self, eqn_config):
         super(HJBLQ, self).__init__(eqn_config)
         self.x_init = np.zeros(self.dim)
@@ -72,10 +72,7 @@ class AllenCahn(Equation):
 
 
 class PricingDefaultRisk(Equation):
-    """
-    Nonlinear Black-Scholes equation with default risk in PNAS paper
-    doi.org/10.1073/pnas.1718942115
-    """
+
     def __init__(self, eqn_config):
         super(PricingDefaultRisk, self).__init__(eqn_config)
         self.x_init = np.ones(self.dim) * 100.0
@@ -108,10 +105,7 @@ class PricingDefaultRisk(Equation):
 
 
 class PricingDiffRate(Equation):
-    """
-    Nonlinear Black-Scholes equation with different interest rates for borrowing and lending
-    in Section 4.4 of Comm. Math. Stat. paper doi.org/10.1007/s40304-017-0117-6
-    """
+
     def __init__(self, eqn_config):
         super(PricingDiffRate, self).__init__(eqn_config)
         self.x_init = np.ones(self.dim) * 100
@@ -141,10 +135,7 @@ class PricingDiffRate(Equation):
 
 
 class BurgersType(Equation):
-    """
-    Multidimensional Burgers-type PDE in Section 4.5 of Comm. Math. Stat. paper
-    doi.org/10.1007/s40304-017-0117-6
-    """
+
     def __init__(self, eqn_config):
         super(BurgersType, self).__init__(eqn_config)
         self.x_init = np.zeros(self.dim)
@@ -167,10 +158,7 @@ class BurgersType(Equation):
 
 
 class QuadraticGradient(Equation):
-    """
-    An example PDE with quadratically growing derivatives in Section 4.6 of Comm. Math. Stat. paper
-    doi.org/10.1007/s40304-017-0117-6
-    """
+
     def __init__(self, eqn_config):
         super(QuadraticGradient, self).__init__(eqn_config)
         self.alpha = 0.4
@@ -209,10 +197,7 @@ class QuadraticGradient(Equation):
 
 
 class ReactionDiffusion(Equation):
-    """
-    Time-dependent reaction-diffusion-type example PDE in Section 4.7 of Comm. Math. Stat. paper
-    doi.org/10.1007/s40304-017-0117-6
-    """
+
     def __init__(self, eqn_config):
         super(ReactionDiffusion, self).__init__(eqn_config)
         self._kappa = 0.6
